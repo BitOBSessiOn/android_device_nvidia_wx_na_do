@@ -23,7 +23,7 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-# Inherit from wx_na_wf device
+# Inherit from wx_na_do device
 $(call inherit-product, device/nvidia/wx_na_do/device.mk)
 
 # Set those variables here to overwrite the inherited values.

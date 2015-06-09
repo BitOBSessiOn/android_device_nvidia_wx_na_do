@@ -1,3 +1,4 @@
+#
 # Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,6 +23,9 @@
 
 # inherit from common shieldtablet
 -include device/nvidia/shieldtablet/BoardConfigCommon.mk
+
+# This variable is set first, so it can be overridden
+# by BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := shieldtablet
