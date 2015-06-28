@@ -21,5 +21,4 @@ type rild_tm_socket, file_type;
 # /dev/socket/mock_modem (NvMTT RIL tests)
 type mock_modem_socket, file_type;
 
-# /dev/socket/at_pal (agpsd)
-type agpsd_socket, file_type;
+

@@ -56,8 +56,3 @@
 /system/vendor/bin/mock_modem                      u:object_r:mock_modem_exec:s0
 /dev/socket/mock_modem                             u:object_r:mock_modem_socket:s0
 
-#
-# agpsd daemon binary and socket
-#
-/system/vendor/bin/agpsd                           u:object_r:agpsd_exec:s0
-/dev/socket/at_pal                                 u:object_r:agpsd_socket:s0

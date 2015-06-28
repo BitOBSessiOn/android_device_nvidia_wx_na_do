@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit from shieldtablet
+$(call inherit-product, device/nvidia/shieldtablet/shieldtablet.mk)
+
 $(call inherit-product-if-exists, vendor/nvidia/wx_na_do/wx_na_do-vendor.mk)
 
 ## overlay
@@ -43,19 +46,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #SELinux
 BOARD_SEPOLICY_DIRS += device/nvidia/wx_na_do/sepolicy/
 BOARD_SEPOLICY_UNION += \
-	agpsd.te \
 	fild.te \
 	file_contexts \
 	file.te \
-	gpsd.te \
 	icera-crashlogs.te \
 	icera-feedback.te \
 	icera-loader.te \
 	icera-switcherd.te \
 	init.te \
-	mediaserver.te \
 	mock_modem.te \
 	system_app.te
 
-# Inherit from shieldtablet
-$(call inherit-product, device/nvidia/shieldtablet/shieldtablet.mk)
+
